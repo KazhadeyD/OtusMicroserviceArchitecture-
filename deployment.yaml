@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: kuber-dep
+  namespace: m
   labels:
     app: kuber
 spec:
@@ -32,5 +33,3 @@ spec:
               port: http
             initialDelaySeconds: 5
             periodSeconds: 5
-
-              
