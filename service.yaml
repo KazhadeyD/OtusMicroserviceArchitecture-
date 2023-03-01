@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: kuber-app-service
+  namespace: m
 spec:
   selector:
     app: http-server
